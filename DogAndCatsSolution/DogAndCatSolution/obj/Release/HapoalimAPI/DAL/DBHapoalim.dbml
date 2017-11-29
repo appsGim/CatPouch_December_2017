@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HapoalimBizQA" Class="DBHapoalimDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=a4aziks9ov.database.windows.net;Initial Catalog=HapoalimBizQA;Persist Security Info=True;User ID=MoblynActiviaV3" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="HapoalimBizQAConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.API_Age_Get" Method="API_Age_Get">
+    <ElementType Name="API_Age_GetResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Token" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OldToken" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Business_V2_Get" Method="API_Business_V2_Get">
+    <Parameter Name="PRM_ID" Parameter="pRM_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Token" Parameter="pRM_Token" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_CategoryID" Parameter="pRM_CategoryID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Business_V2_GetResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="T1" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="T2" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_BusinessCategory_V2_Get" Method="API_BusinessCategory_V2_Get">
+    <Parameter Name="PRM_ID" Parameter="pRM_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Token" Parameter="pRM_Token" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="API_BusinessCategory_V2_GetResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="T1" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="T2" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Check_Captcha_AndUser" Method="API_Check_Captcha_AndUser">
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_UserGuid" Parameter="pRM_UserGuid" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_UserUniqueIdentity" Parameter="pRM_UserUniqueIdentity" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="PRM_CreateDate" Parameter="pRM_CreateDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_CreateDateISR" Parameter="pRM_CreateDateISR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_MaxAllowed" Parameter="pRM_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_MinutesToExpired" Parameter="pRM_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_IP" Parameter="pRM_IP" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="API_Check_Captcha_AndUserResult">
+      <Column Name="NeedCaptcha" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MaxAllowed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IPCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpiredDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Voted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Offers" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserUniqueID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_City_V2_Get" Method="API_City_V2_Get">
+    <Parameter Name="PRM_ID" Parameter="pRM_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Token" Parameter="pRM_Token" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="API_City_V2_GetResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="T1" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="T2" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_GetNeighbourHood_ByNumber" Method="API_GetNeighbourHood_ByNumber">
+    <Parameter Name="PRM_CityID" Parameter="pRM_CityID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_StreetID" Parameter="pRM_StreetID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Number" Parameter="pRM_Number" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_GetNeighbourHood_ByNumberResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Token" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Log_Insert" Method="API_Log_Insert">
+    <Parameter Name="PRM_ActionType" Parameter="pRM_ActionType" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_LogType" Parameter="pRM_LogType" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_InnerLogType" Parameter="pRM_InnerLogType" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_MSG" Parameter="pRM_MSG" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="PRM_MSG2" Parameter="pRM_MSG2" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="PRM_Error" Parameter="pRM_Error" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="PRM_Critical" Parameter="pRM_Critical" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PRM_Refferer" Parameter="pRM_Refferer" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="PRM_IP" Parameter="pRM_IP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PRM_UA" Parameter="pRM_UA" Type="System.String" DbType="NVarChar(4000)" />
+    <Parameter Name="PRM_APICreateDate" Parameter="pRM_APICreateDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_APICreateDate_ISR" Parameter="pRM_APICreateDate_ISR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_Instance" Parameter="pRM_Instance" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PRM_Identifier" Parameter="pRM_Identifier" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.API_Refresh_Data_Tokens" Method="API_Refresh_Data_Tokens">
+    <Parameter Name="ISRTime" Parameter="iSRTime" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="HourToUpdate" Parameter="hourToUpdate" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Refresh_Data_TokensResult">
+      <Column Name="City_Updated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BusiCategory_Updated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Business_Updated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Streets_V2_Get" Method="API_Streets_V2_Get">
+    <Parameter Name="PRM_ID" Parameter="pRM_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Token" Parameter="pRM_Token" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_CityID" Parameter="pRM_CityID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Streets_V2_GetResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="T1" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="T2" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CityID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_IsAlive_UniqueUser" Method="API_IsAlive_UniqueUser">
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_UserUniqueIdentity" Parameter="pRM_UserUniqueIdentity" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="PRM_IP" Parameter="pRM_IP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PRM_UA" Parameter="pRM_UA" Type="System.String" DbType="NVarChar(2000)" />
+    <Parameter Name="PRM_PlatformID" Parameter="pRM_PlatformID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_CreateDate" Parameter="pRM_CreateDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_CreateDateISR" Parameter="pRM_CreateDateISR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_IP_MaxAllowed" Parameter="pRM_IP_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_IP_MinutesToExpired" Parameter="pRM_IP_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_AddToIPIdentity" Parameter="pRM_AddToIPIdentity" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Unique_MaxAllowed" Parameter="pRM_Unique_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Unique_MinutesToExpired" Parameter="pRM_Unique_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_IsAlive_UniqueUserResult">
+      <Column Name="NeedCaptcha_DUE_IP" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MaxAllowed_IP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Count_IP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpiredDate_IP" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Voted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Offers" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NewUserGuid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="UserToken" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="StaticToken" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Count_MACUnique" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaxAllowed_MACUnique" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpiredDate_MACUnique" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MACUnique_Reject" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_UI_UserResponse_Get" Method="API_UI_UserResponse_Get">
+    <ElementType Name="API_UI_UserResponse_GetResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Lead_Insert_Vote" Method="API_Lead_Insert_Vote">
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_BundleToken" Parameter="pRM_BundleToken" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_UserToken" Parameter="pRM_UserToken" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_Unique_User_Identity" Parameter="pRM_Unique_User_Identity" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="PRM_BusinessCategoryID" Parameter="pRM_BusinessCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_BusinessID" Parameter="pRM_BusinessID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_PlatformID" Parameter="pRM_PlatformID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_IP" Parameter="pRM_IP" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PRM_UA" Parameter="pRM_UA" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="PRM_APICreateDate" Parameter="pRM_APICreateDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_APICreateDateISR" Parameter="pRM_APICreateDateISR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_MaxVotes" Parameter="pRM_MaxVotes" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_MaxOffers" Parameter="pRM_MaxOffers" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_MaxRejectCountToLock" Parameter="pRM_MaxRejectCountToLock" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Unique_MaxAllowed" Parameter="pRM_Unique_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Unique_MinutesToExpired" Parameter="pRM_Unique_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Lead_Insert_VoteResult">
+      <Column Name="DBResult" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UniqueUserID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UserToken" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OffersCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VoteCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Rating_ViewAfterCampaign" Method="API_Rating_ViewAfterCampaign">
+    <Parameter Name="PRM_Top" Parameter="pRM_Top" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_CityID" Parameter="pRM_CityID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_NeighberhoodID" Parameter="pRM_NeighberhoodID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Rating_ViewAfterCampaignResult">
+      <Column Name="NBT" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Neighberhood" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="BCT" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Business" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="BT" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Lead_Insert_Offer" Method="API_Lead_Insert_Offer">
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_BundleToken" Parameter="pRM_BundleToken" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_UniqueUserID" Parameter="pRM_UniqueUserID" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="PRM_UserToken" Parameter="pRM_UserToken" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_Unique_User_Identity" Parameter="pRM_Unique_User_Identity" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="PRM_BusinessCategoryID" Parameter="pRM_BusinessCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_BusinessID" Parameter="pRM_BusinessID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_CiteID" Parameter="pRM_CiteID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_StreetID" Parameter="pRM_StreetID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_NeightberhoodID" Parameter="pRM_NeightberhoodID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_StreetNumber" Parameter="pRM_StreetNumber" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_AgeID" Parameter="pRM_AgeID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_GenderID" Parameter="pRM_GenderID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_PlatformID" Parameter="pRM_PlatformID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_IP" Parameter="pRM_IP" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PRM_UA" Parameter="pRM_UA" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="PRM_APICreateDate" Parameter="pRM_APICreateDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_APICreateDateISR" Parameter="pRM_APICreateDateISR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_MaxVotes" Parameter="pRM_MaxVotes" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_MaxOffers" Parameter="pRM_MaxOffers" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_MaxRejectCountToLock" Parameter="pRM_MaxRejectCountToLock" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Captcha" Parameter="pRM_Captcha" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="PRM_Unique_MaxAllowed" Parameter="pRM_Unique_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Unique_MinutesToExpired" Parameter="pRM_Unique_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_AddOffer" Parameter="pRM_AddOffer" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="API_Lead_Insert_OfferResult">
+      <Column Name="DBResult" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UniqueUserID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UserToken" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BundleToken" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TotalUniqueError" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VoteCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Rating_Distribution" Method="API_Rating_Distribution">
+    <Parameter Name="PRM_BankerToken" Parameter="pRM_BankerToken" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_CityID" Parameter="pRM_CityID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_NeighberhoodID" Parameter="pRM_NeighberhoodID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_CategoryID" Parameter="pRM_CategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_BusinessID" Parameter="pRM_BusinessID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Rating_DistributionResult">
+      <Column Name="Age" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="Male" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Female" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Banker_Login" Method="API_Banker_Login">
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_ISRTime" Parameter="pRM_ISRTime" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_Email" Parameter="pRM_Email" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="PRM_Pass" Parameter="pRM_Pass" Type="System.String" DbType="NVarChar(250)" />
+    <ElementType Name="API_Banker_LoginResult">
+      <Column Name="DBResult" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserToken" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BankerStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Banker_isLogedIn" Method="API_Banker_isLogedIn">
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_ISRTime" Parameter="pRM_ISRTime" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_Token" Parameter="pRM_Token" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_MinuteSession" Parameter="pRM_MinuteSession" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Banker_isLogedInResult">
+      <Column Name="DBResult" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserToken" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BankerStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastLoginTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Street_GetByCityNeighberhood" Method="API_Street_GetByCityNeighberhood">
+    <Parameter Name="PRM_BankerToken" Parameter="pRM_BankerToken" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_CityID" Parameter="pRM_CityID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_NeighberhoodID" Parameter="pRM_NeighberhoodID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Street_GetByCityNeighberhoodResult">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="T" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Unique_Identity_AddUpdate" Method="API_Unique_Identity_AddUpdate">
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_UserUniqueIdentity" Parameter="pRM_UserUniqueIdentity" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="PRM_CreateDate" Parameter="pRM_CreateDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_CreateDateISR" Parameter="pRM_CreateDateISR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_Unique_MaxAllowed" Parameter="pRM_Unique_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Unique_MinutesToExpired" Parameter="pRM_Unique_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_IsBanker" Parameter="pRM_IsBanker" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="API_Unique_Identity_AddUpdateResult">
+      <Column Name="TotalNow" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpiredDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MaxAllowed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Location_Get" Method="API_Location_Get">
+    <ElementType Name="API_Location_GetResult">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="CityID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StreetID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NeighbourhoodID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Neighbourhood_V3_Get" Method="API_Neighbourhood_V3_Get">
+    <Parameter Name="PRM_ID" Parameter="pRM_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Token" Parameter="pRM_Token" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="API_Neighbourhood_V3_GetResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="CityID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Token" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="TokenOLD" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="LastUpdate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Street_GetStreetNumber_V2" Method="API_Street_GetStreetNumber_V2">
+    <Parameter Name="PRM_Token" Parameter="pRM_Token" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_isBanker" Parameter="pRM_isBanker" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PRM_CityID" Parameter="pRM_CityID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_NeighberhoodID" Parameter="pRM_NeighberhoodID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_StreetID" Parameter="pRM_StreetID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Street_GetStreetNumber_V2Result">
+      <Column Name="Number" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Token_Tracking_Log" Method="API_Token_Tracking_Log">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.API_Rating_After_Offer_By_User" Method="API_Rating_After_Offer_By_User">
+    <Parameter Name="PRM_Top" Parameter="pRM_Top" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_CityID" Parameter="pRM_CityID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_NeighberhoodID" Parameter="pRM_NeighberhoodID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Rating_After_Offer_By_UserResult">
+      <Column Name="Category" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Business" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="T" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="T2" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Total" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

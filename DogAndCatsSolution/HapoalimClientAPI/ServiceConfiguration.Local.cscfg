@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="HapoalimClientAPI" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="HapoalimClientSideAPI">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+ 
+			<Setting name="Client_To_ServerToken" value="7F3B8322-810B-4383-8080-A2277DD761F4"/>
+			<Setting name="ConfigUpdateAsMinutes" value="60"/>
+			<Setting name="IP_MinuteCycle" value="10"/>
+			<Setting name="IP_AllowedPerCycle" value="100"/>
+			 
+			<Setting name="Campaign_StartDate" value="2017-01-01"/>
+			<Setting name="Campaign_EndDate" value="2017-06-01"/>
+
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

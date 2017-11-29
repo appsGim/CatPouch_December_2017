@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://api2.sendmsg.co.il/SendMsgService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SendMsgService" targetNamespace="http://api2.sendmsg.co.il/SendMsgService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://api2.sendmsg.co.il/SendMsgService/Imports">
+      <xsd:import schemaLocation="http://api3.sendmsg.co.il/Service.svc?xsd=xsd0" namespace="http://api2.sendmsg.co.il/SendMsgService" />
+      <xsd:import schemaLocation="http://api3.sendmsg.co.il/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISendMsgService_AddUsersOnly_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUsersOnly" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_AddUsersOnly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUsersOnlyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_AddUsersAndSend_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUsersAndSend" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_AddUsersAndSend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUsersAndSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_AddUsersAndSendTransection_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUsersAndSendTransection" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_AddUsersAndSendTransection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUsersAndSendTransectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_AddUsersToLists_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUsersToLists" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_AddUsersToLists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUsersToListsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_AddUsersToListAndSend_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUsersToListAndSend" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_AddUsersToListAndSend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUsersToListAndSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_CreateMessageOnly_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMessageOnly" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_CreateMessageOnly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMessageOnlyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetMsgBasicStatistics_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMsgBasicStatistics" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetMsgBasicStatistics_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMsgBasicStatisticsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetMsgFullStatistics_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMsgFullStatistics" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetMsgFullStatistics_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMsgFullStatisticsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetUserDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetUserDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetUserMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserMessages" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetUserMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetSystemUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemUsers" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetSystemUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetMailingListUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailingListUsers" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetMailingListUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailingListUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetSentMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSentMessages" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetSentMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSentMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetMailingListNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailingListNames" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetMailingListNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailingListNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetTemplates_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplates" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetTemplates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplate" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_GetTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_DelTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelTemplate" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_DelTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_UnDelTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnDelTemplate" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_UnDelTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnDelTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_DelMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelMessage" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_DelMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_UnDelMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnDelMessage" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_UnDelMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnDelMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_PauseMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:PauseMessage" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_PauseMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PauseMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_UnPauseMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnPauseMessage" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_UnPauseMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnPauseMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_get_ErrorsEmailAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_ErrorsEmailAddress" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_get_ErrorsEmailAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_ErrorsEmailAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_set_ErrorsEmailAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_ErrorsEmailAddress" />
+  </wsdl:message>
+  <wsdl:message name="ISendMsgService_set_ErrorsEmailAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_ErrorsEmailAddressResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISendMsgService">
+    <wsdl:operation name="AddUsersOnly">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersOnly" message="tns:ISendMsgService_AddUsersOnly_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersOnlyResponse" message="tns:ISendMsgService_AddUsersOnly_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUsersAndSend">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersAndSend" message="tns:ISendMsgService_AddUsersAndSend_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersAndSendResponse" message="tns:ISendMsgService_AddUsersAndSend_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUsersAndSendTransection">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersAndSendTransection" message="tns:ISendMsgService_AddUsersAndSendTransection_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersAndSendTransectionResponse" message="tns:ISendMsgService_AddUsersAndSendTransection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUsersToLists">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersToLists" message="tns:ISendMsgService_AddUsersToLists_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersToListsResponse" message="tns:ISendMsgService_AddUsersToLists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUsersToListAndSend">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersToListAndSend" message="tns:ISendMsgService_AddUsersToListAndSend_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersToListAndSendResponse" message="tns:ISendMsgService_AddUsersToListAndSend_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateMessageOnly">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/CreateMessageOnly" message="tns:ISendMsgService_CreateMessageOnly_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/CreateMessageOnlyResponse" message="tns:ISendMsgService_CreateMessageOnly_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMsgBasicStatistics">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetMsgBasicStatistics" message="tns:ISendMsgService_GetMsgBasicStatistics_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetMsgBasicStatisticsResponse" message="tns:ISendMsgService_GetMsgBasicStatistics_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMsgFullStatistics">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetMsgFullStatistics" message="tns:ISendMsgService_GetMsgFullStatistics_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetMsgFullStatisticsResponse" message="tns:ISendMsgService_GetMsgFullStatistics_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetUserDetails" message="tns:ISendMsgService_GetUserDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetUserDetailsResponse" message="tns:ISendMsgService_GetUserDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserMessages">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetUserMessages" message="tns:ISendMsgService_GetUserMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetUserMessagesResponse" message="tns:ISendMsgService_GetUserMessages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemUsers">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetSystemUsers" message="tns:ISendMsgService_GetSystemUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetSystemUsersResponse" message="tns:ISendMsgService_GetSystemUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMailingListUsers">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetMailingListUsers" message="tns:ISendMsgService_GetMailingListUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetMailingListUsersResponse" message="tns:ISendMsgService_GetMailingListUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSentMessages">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetSentMessages" message="tns:ISendMsgService_GetSentMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetSentMessagesResponse" message="tns:ISendMsgService_GetSentMessages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMailingListNames">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetMailingListNames" message="tns:ISendMsgService_GetMailingListNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetMailingListNamesResponse" message="tns:ISendMsgService_GetMailingListNames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplates">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetTemplates" message="tns:ISendMsgService_GetTemplates_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetTemplatesResponse" message="tns:ISendMsgService_GetTemplates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplate">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetTemplate" message="tns:ISendMsgService_GetTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetTemplateResponse" message="tns:ISendMsgService_GetTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelTemplate">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/DelTemplate" message="tns:ISendMsgService_DelTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/DelTemplateResponse" message="tns:ISendMsgService_DelTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnDelTemplate">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/UnDelTemplate" message="tns:ISendMsgService_UnDelTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/UnDelTemplateResponse" message="tns:ISendMsgService_UnDelTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMessage">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/DelMessage" message="tns:ISendMsgService_DelMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/DelMessageResponse" message="tns:ISendMsgService_DelMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnDelMessage">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/UnDelMessage" message="tns:ISendMsgService_UnDelMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/UnDelMessageResponse" message="tns:ISendMsgService_UnDelMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PauseMessage">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/PauseMessage" message="tns:ISendMsgService_PauseMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/PauseMessageResponse" message="tns:ISendMsgService_PauseMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnPauseMessage">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/UnPauseMessage" message="tns:ISendMsgService_UnPauseMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/UnPauseMessageResponse" message="tns:ISendMsgService_UnPauseMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_ErrorsEmailAddress">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/get_ErrorsEmailAddress" message="tns:ISendMsgService_get_ErrorsEmailAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/get_ErrorsEmailAddressResponse" message="tns:ISendMsgService_get_ErrorsEmailAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_ErrorsEmailAddress">
+      <wsdl:input wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/set_ErrorsEmailAddress" message="tns:ISendMsgService_set_ErrorsEmailAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/set_ErrorsEmailAddressResponse" message="tns:ISendMsgService_set_ErrorsEmailAddress_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISendMsgService" type="tns:ISendMsgService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddUsersOnly">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersOnly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUsersAndSend">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersAndSend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUsersAndSendTransection">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersAndSendTransection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUsersToLists">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersToLists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUsersToListAndSend">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/AddUsersToListAndSend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateMessageOnly">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/CreateMessageOnly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMsgBasicStatistics">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetMsgBasicStatistics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMsgFullStatistics">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetMsgFullStatistics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserMessages">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetUserMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemUsers">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetSystemUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMailingListUsers">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetMailingListUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSentMessages">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetSentMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMailingListNames">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetMailingListNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplates">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetTemplates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplate">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/GetTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelTemplate">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/DelTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnDelTemplate">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/UnDelTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMessage">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/DelMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnDelMessage">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/UnDelMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PauseMessage">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/PauseMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnPauseMessage">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/UnPauseMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_ErrorsEmailAddress">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/get_ErrorsEmailAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_ErrorsEmailAddress">
+      <soap:operation soapAction="http://api2.sendmsg.co.il/SendMsgService/ISendMsgService/set_ErrorsEmailAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SendMsgService">
+    <wsdl:port name="BasicHttpBinding_ISendMsgService" binding="tns:BasicHttpBinding_ISendMsgService">
+      <soap:address location="http://api3.sendmsg.co.il/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HapoalimBizQAModelStoreContainer" CdmEntityContainer="HapoalimBizQAEntities">
+    <EntitySetMapping Name="ActionTypes">
+      <EntityTypeMapping TypeName="HapoalimBizQAModel.ActionType">
+        <MappingFragment StoreEntitySet="ActionType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AddressCombinations">
+      <EntityTypeMapping TypeName="HapoalimBizQAModel.AddressCombination">
+        <MappingFragment StoreEntitySet="AddressCombination">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="StreetID" ColumnName="StreetID" />
+          <ScalarProperty Name="NeighbourhoodID" ColumnName="NeighbourhoodID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bussineses">
+      <EntityTypeMapping TypeName="HapoalimBizQAModel.Bussines">
+        <MappingFragment StoreEntitySet="Bussineses">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BussinesName" ColumnName="BussinesName" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BussinessCateogries">
+      <EntityTypeMapping TypeName="HapoalimBizQAModel.BussinessCateogry">
+        <MappingFragment StoreEntitySet="BussinessCateogries">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="HapoalimBizQAModel.City">
+        <MappingFragment StoreEntitySet="Cities">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DistrictID" ColumnName="DistrictID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="HapoalimBizQAModel.Log">
+        <MappingFragment StoreEntitySet="Log">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="ActionType" ColumnName="ActionType" />
+          <ScalarProperty Name="LogType" ColumnName="LogType" />
+          <ScalarProperty Name="MSG" ColumnName="MSG" />
+          <ScalarProperty Name="MSG2" ColumnName="MSG2" />
+          <ScalarProperty Name="Error" ColumnName="Error" />
+          <ScalarProperty Name="Critical" ColumnName="Critical" />
+          <ScalarProperty Name="InnerLogType" ColumnName="InnerLogType" />
+          <ScalarProperty Name="APICreateDate" ColumnName="APICreateDate" />
+          <ScalarProperty Name="APICreateDate_ISR" ColumnName="APICreateDate_ISR" />
+          <ScalarProperty Name="APITransaction" ColumnName="APITransaction" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="UA" ColumnName="UA" />
+          <ScalarProperty Name="Refferer" ColumnName="Refferer" />
+          <ScalarProperty Name="Instance" ColumnName="Instance" />
+          <ScalarProperty Name="QUse" ColumnName="QUse" />
+          <ScalarProperty Name="Identifier" ColumnName="Identifier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogTypes">
+      <EntityTypeMapping TypeName="HapoalimBizQAModel.LogType">
+        <MappingFragment StoreEntitySet="LogType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Neighbourhoods">
+      <EntityTypeMapping TypeName="HapoalimBizQAModel.Neighbourhood">
+        <MappingFragment StoreEntitySet="Neighbourhood">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Streets">
+      <EntityTypeMapping TypeName="HapoalimBizQAModel.Street">
+        <MappingFragment StoreEntitySet="Streets">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="HapoalimBizQAModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MacAddress" ColumnName="MacAddress" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="VotesCount" ColumnName="VotesCount" />
+          <ScalarProperty Name="ProposalCount" ColumnName="ProposalCount" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UserAgent" ColumnName="UserAgent" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="OS" ColumnName="OS" />
+          <ScalarProperty Name="SubmittedTimes" ColumnName="SubmittedTimes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserVotes">
+      <EntityTypeMapping TypeName="HapoalimBizQAModel.UserVote">
+        <MappingFragment StoreEntitySet="UserVotes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="BuissinesID" ColumnName="BuissinesID" />
+          <ScalarProperty Name="VoteType" ColumnName="VoteType" />
+          <ScalarProperty Name="AddressCombinationID" ColumnName="AddressCombinationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VoteTypes">
+      <EntityTypeMapping TypeName="HapoalimBizQAModel.VoteType">
+        <MappingFragment StoreEntitySet="VoteTypes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VoteName" ColumnName="VoteName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="API_Log_Insert" FunctionName="HapoalimBizQAModel.Store.API_Log_Insert" />
+    <FunctionImportMapping FunctionImportName="SP_Front_Insert_User" FunctionName="HapoalimBizQAModel.Store.SP_Front_Insert_User" />
+    <FunctionImportMapping FunctionImportName="SP_Front_Insert_Vote" FunctionName="HapoalimBizQAModel.Store.SP_Front_Insert_Vote" />
+    <FunctionImportMapping FunctionImportName="SP_Front_Insert_Vote_OLD" FunctionName="HapoalimBizQAModel.Store.SP_Front_Insert_Vote_OLD" />
+    <FunctionImportMapping FunctionImportName="SP_Front_Select_All_Bussineses" FunctionName="HapoalimBizQAModel.Store.SP_Front_Select_All_Bussineses">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HapoalimBizQAModel.SP_Front_Select_All_Bussineses_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BussinesName" ColumnName="BussinesName" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Front_Select_All_Cities" FunctionName="HapoalimBizQAModel.Store.SP_Front_Select_All_Cities">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HapoalimBizQAModel.SP_Front_Select_All_Cities_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Front_Select_All_Streets_By_City" FunctionName="HapoalimBizQAModel.Store.SP_Front_Select_All_Streets_By_City">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HapoalimBizQAModel.SP_Front_Select_All_Streets_By_City_Result">
+          <ScalarProperty Name="StreetID" ColumnName="StreetID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="NeighbourhoodID" ColumnName="NeighbourhoodID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Front_Select_Neighbourhood_By_City_And_Street" FunctionName="HapoalimBizQAModel.Store.SP_Front_Select_Neighbourhood_By_City_And_Street">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HapoalimBizQAModel.SP_Front_Select_Neighbourhood_By_City_And_Street_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NeighbourhoodID" ColumnName="NeighbourhoodID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Front_Select_SubmittedTimes" FunctionName="HapoalimBizQAModel.Store.SP_Front_Select_SubmittedTimes" />
+    <FunctionImportMapping FunctionImportName="SP_Front_Select_Votes_By_City_And_Neighbourhood" FunctionName="HapoalimBizQAModel.Store.SP_Front_Select_Votes_By_City_And_Neighbourhood">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HapoalimBizQAModel.SP_Front_Select_Votes_By_City_And_Neighbourhood_Result">
+          <ScalarProperty Name="BussinesName" ColumnName="BussinesName" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="NeighbourhoodID" ColumnName="NeighbourhoodID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Front_Update_User" FunctionName="HapoalimBizQAModel.Store.SP_Front_Update_User" />
+    <FunctionImportMapping FunctionImportName="SP_Front_Update_User_Vote" FunctionName="HapoalimBizQAModel.Store.SP_Front_Update_User_Vote" />
+    <FunctionImportMapping FunctionImportName="WRQ_Log_Insert" FunctionName="HapoalimBizQAModel.Store.WRQ_Log_Insert" />
+  </EntityContainerMapping>
+</Mapping>

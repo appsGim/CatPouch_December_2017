@@ -1,0 +1,4 @@
+﻿
+select * from project
+select * from [dbo].[Pet] 
+delete from [dbo].[Pet] where id in (2,4,5,6)

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "DogAndCatSolution", "DogAndCatSolution\DogAndCatSolution.ccproj", "{A3D2A028-4D5E-4C2B-A9A1-A146BA470E21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogAndCatAPI", "DogAndCatAPI\DogAndCatAPI.csproj", "{751E454A-BF29-479C-85E4-395550738CD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3D2A028-4D5E-4C2B-A9A1-A146BA470E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D2A028-4D5E-4C2B-A9A1-A146BA470E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D2A028-4D5E-4C2B-A9A1-A146BA470E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D2A028-4D5E-4C2B-A9A1-A146BA470E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{751E454A-BF29-479C-85E4-395550738CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{751E454A-BF29-479C-85E4-395550738CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{751E454A-BF29-479C-85E4-395550738CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{751E454A-BF29-479C-85E4-395550738CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

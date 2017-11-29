@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HapoalimBizQAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ActionType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AddressCombination">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CityID" Type="Int32" Nullable="false" />
+    <Property Name="StreetID" Type="Int32" Nullable="false" />
+    <Property Name="NeighbourhoodID" Type="Int32" />
+    <NavigationProperty Name="City" Relationship="Self.FK_AddressCombination_Cities" FromRole="AddressCombination" ToRole="Cities" />
+    <NavigationProperty Name="Neighbourhood" Relationship="Self.FK_AddressCombination_Neighbourhood" FromRole="AddressCombination" ToRole="Neighbourhood" />
+    <NavigationProperty Name="Street" Relationship="Self.FK_AddressCombination_Streets" FromRole="AddressCombination" ToRole="Streets" />
+    <NavigationProperty Name="UserVotes" Relationship="Self.FK_UserVotes_AddressCombination" FromRole="AddressCombination" ToRole="UserVotes" />
+  </EntityType>
+  <EntityType Name="Bussines">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BussinesName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BussinessCateogry" Relationship="Self.FK_Bussineses_BussinessCateogries" FromRole="Bussineses" ToRole="BussinessCateogries" />
+    <NavigationProperty Name="UserVotes" Relationship="Self.FK_Bussiness_UserVoteBuissiness" FromRole="Bussineses" ToRole="UserVotes" />
+  </EntityType>
+  <EntityType Name="BussinessCateogry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Bussineses" Relationship="Self.FK_Bussineses_BussinessCateogries" FromRole="BussinessCateogries" ToRole="Bussineses" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DistrictID" Type="Int32" />
+    <NavigationProperty Name="AddressCombinations" Relationship="Self.FK_AddressCombination_Cities" FromRole="Cities" ToRole="AddressCombination" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ActionType" Type="Int32" />
+    <Property Name="LogType" Type="Int32" />
+    <Property Name="MSG" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MSG2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Error" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Critical" Type="Boolean" />
+    <Property Name="InnerLogType" Type="Int32" />
+    <Property Name="APICreateDate" Type="DateTime" Precision="3" />
+    <Property Name="APICreateDate_ISR" Type="DateTime" Precision="3" />
+    <Property Name="APITransaction" Type="Guid" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="IP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UA" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="Refferer" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Instance" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="QUse" Type="Boolean" />
+    <Property Name="Identifier" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LogType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Neighbourhood">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AddressCombinations" Relationship="Self.FK_AddressCombination_Neighbourhood" FromRole="Neighbourhood" ToRole="AddressCombination" />
+  </EntityType>
+  <EntityType Name="Street">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AddressCombinations" Relationship="Self.FK_AddressCombination_Streets" FromRole="Streets" ToRole="AddressCombination" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MacAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VotesCount" Type="Int32" Nullable="false" />
+    <Property Name="ProposalCount" Type="Int32" Nullable="false" />
+    <Property Name="Age" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UserAgent" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Platform" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OS" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="SubmittedTimes" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UserVotes" Relationship="Self.FK_UserVotes_Users" FromRole="Users" ToRole="UserVotes" />
+  </EntityType>
+  <EntityType Name="UserVote">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="BuissinesID" Type="Int32" Nullable="false" />
+    <Property Name="VoteType" Type="Int32" Nullable="false" />
+    <Property Name="AddressCombinationID" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="AddressCombination" Relationship="Self.FK_UserVotes_AddressCombination" FromRole="UserVotes" ToRole="AddressCombination" />
+    <NavigationProperty Name="Bussines" Relationship="Self.FK_Bussiness_UserVoteBuissiness" FromRole="UserVotes" ToRole="Bussineses" />
+    <NavigationProperty Name="User" Relationship="Self.FK_UserVotes_Users" FromRole="UserVotes" ToRole="Users" />
+    <NavigationProperty Name="VoteType1" Relationship="Self.FK_UserVotes_VoteTypes" FromRole="UserVotes" ToRole="VoteTypes" />
+  </EntityType>
+  <EntityType Name="VoteType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VoteName" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="UserVotes" Relationship="Self.FK_UserVotes_VoteTypes" FromRole="VoteTypes" ToRole="UserVotes" />
+  </EntityType>
+  <Association Name="FK_AddressCombination_Cities">
+    <End Role="Cities" Type="Self.City" Multiplicity="1" />
+    <End Role="AddressCombination" Type="Self.AddressCombination" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AddressCombination">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AddressCombination_Neighbourhood">
+    <End Role="Neighbourhood" Type="Self.Neighbourhood" Multiplicity="0..1" />
+    <End Role="AddressCombination" Type="Self.AddressCombination" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Neighbourhood">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AddressCombination">
+        <PropertyRef Name="NeighbourhoodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AddressCombination_Streets">
+    <End Role="Streets" Type="Self.Street" Multiplicity="1" />
+    <End Role="AddressCombination" Type="Self.AddressCombination" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Streets">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AddressCombination">
+        <PropertyRef Name="StreetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserVotes_AddressCombination">
+    <End Role="AddressCombination" Type="Self.AddressCombination" Multiplicity="1" />
+    <End Role="UserVotes" Type="Self.UserVote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AddressCombination">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserVotes">
+        <PropertyRef Name="AddressCombinationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bussineses_BussinessCateogries">
+    <End Role="BussinessCateogries" Type="Self.BussinessCateogry" Multiplicity="1" />
+    <End Role="Bussineses" Type="Self.Bussines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BussinessCateogries">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Bussineses">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bussiness_UserVoteBuissiness">
+    <End Role="Bussineses" Type="Self.Bussines" Multiplicity="1" />
+    <End Role="UserVotes" Type="Self.UserVote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bussineses">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserVotes">
+        <PropertyRef Name="BuissinesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserVotes_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="UserVotes" Type="Self.UserVote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserVotes">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserVotes_VoteTypes">
+    <End Role="VoteTypes" Type="Self.VoteType" Multiplicity="1" />
+    <End Role="UserVotes" Type="Self.UserVote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VoteTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserVotes">
+        <PropertyRef Name="VoteType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HapoalimBizQAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ActionTypes" EntityType="Self.ActionType" />
+    <EntitySet Name="AddressCombinations" EntityType="Self.AddressCombination" />
+    <EntitySet Name="Bussineses" EntityType="Self.Bussines" />
+    <EntitySet Name="BussinessCateogries" EntityType="Self.BussinessCateogry" />
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="Logs" EntityType="Self.Log" />
+    <EntitySet Name="LogTypes" EntityType="Self.LogType" />
+    <EntitySet Name="Neighbourhoods" EntityType="Self.Neighbourhood" />
+    <EntitySet Name="Streets" EntityType="Self.Street" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="UserVotes" EntityType="Self.UserVote" />
+    <EntitySet Name="VoteTypes" EntityType="Self.VoteType" />
+    <AssociationSet Name="FK_AddressCombination_Cities" Association="Self.FK_AddressCombination_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="AddressCombination" EntitySet="AddressCombinations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AddressCombination_Neighbourhood" Association="Self.FK_AddressCombination_Neighbourhood">
+      <End Role="Neighbourhood" EntitySet="Neighbourhoods" />
+      <End Role="AddressCombination" EntitySet="AddressCombinations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AddressCombination_Streets" Association="Self.FK_AddressCombination_Streets">
+      <End Role="Streets" EntitySet="Streets" />
+      <End Role="AddressCombination" EntitySet="AddressCombinations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserVotes_AddressCombination" Association="Self.FK_UserVotes_AddressCombination">
+      <End Role="AddressCombination" EntitySet="AddressCombinations" />
+      <End Role="UserVotes" EntitySet="UserVotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bussineses_BussinessCateogries" Association="Self.FK_Bussineses_BussinessCateogries">
+      <End Role="BussinessCateogries" EntitySet="BussinessCateogries" />
+      <End Role="Bussineses" EntitySet="Bussineses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bussiness_UserVoteBuissiness" Association="Self.FK_Bussiness_UserVoteBuissiness">
+      <End Role="Bussineses" EntitySet="Bussineses" />
+      <End Role="UserVotes" EntitySet="UserVotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserVotes_Users" Association="Self.FK_UserVotes_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserVotes" EntitySet="UserVotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserVotes_VoteTypes" Association="Self.FK_UserVotes_VoteTypes">
+      <End Role="VoteTypes" EntitySet="VoteTypes" />
+      <End Role="UserVotes" EntitySet="UserVotes" />
+    </AssociationSet>
+    <FunctionImport Name="API_Log_Insert">
+      <Parameter Name="PRM_ProjectID" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_ActionType" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_LogType" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_InnerLogType" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_MSG" Mode="In" Type="String" />
+      <Parameter Name="PRM_MSG2" Mode="In" Type="String" />
+      <Parameter Name="PRM_Error" Mode="In" Type="String" />
+      <Parameter Name="PRM_Critical" Mode="In" Type="Boolean" />
+      <Parameter Name="PRM_Refferer" Mode="In" Type="String" />
+      <Parameter Name="PRM_IP" Mode="In" Type="String" />
+      <Parameter Name="PRM_UA" Mode="In" Type="String" />
+      <Parameter Name="PRM_APICreateDate" Mode="In" Type="DateTime" />
+      <Parameter Name="PRM_APICreateDate_ISR" Mode="In" Type="DateTime" />
+      <Parameter Name="PRM_APITransaction" Mode="In" Type="Guid" />
+      <Parameter Name="PRM_Instance" Mode="In" Type="String" />
+      <Parameter Name="PRM_Identifier" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Front_Insert_User">
+      <Parameter Name="PRM_MacAddress" Mode="In" Type="String" />
+      <Parameter Name="PRM_IP" Mode="In" Type="String" />
+      <Parameter Name="PRM_Age" Mode="In" Type="String" />
+      <Parameter Name="PRM_Gender" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_CreatedDate" Mode="In" Type="DateTime" />
+      <Parameter Name="PRM_UserAgent" Mode="In" Type="String" />
+      <Parameter Name="PRM_Platform" Mode="In" Type="String" />
+      <Parameter Name="PRM_OS" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Front_Insert_Vote">
+      <Parameter Name="PRM_UserID" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_BussinessID" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_VoteType" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_AddressCombinationID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Front_Insert_Vote_OLD">
+      <Parameter Name="PRM_UserID" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_BussinessID" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_VoteType" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Front_Select_All_Bussineses" ReturnType="Collection(HapoalimBizQAModel.SP_Front_Select_All_Bussineses_Result)" />
+    <FunctionImport Name="SP_Front_Select_All_Cities" ReturnType="Collection(HapoalimBizQAModel.SP_Front_Select_All_Cities_Result)" />
+    <FunctionImport Name="SP_Front_Select_All_Streets_By_City" ReturnType="Collection(HapoalimBizQAModel.SP_Front_Select_All_Streets_By_City_Result)">
+      <Parameter Name="PRM_CityID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Front_Select_Neighbourhood_By_City_And_Street" ReturnType="Collection(HapoalimBizQAModel.SP_Front_Select_Neighbourhood_By_City_And_Street_Result)">
+      <Parameter Name="PRM_CityID" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_StreetID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Front_Select_SubmittedTimes" ReturnType="Collection(Int32)">
+      <Parameter Name="PRM_UserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Front_Select_Votes_By_City_And_Neighbourhood" ReturnType="Collection(HapoalimBizQAModel.SP_Front_Select_Votes_By_City_And_Neighbourhood_Result)">
+      <Parameter Name="PRM_AddressCombination" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Front_Update_User">
+      <Parameter Name="PRM_ID" Mode="In" Type="String" />
+      <Parameter Name="PRM_Age" Mode="In" Type="String" />
+      <Parameter Name="PRM_Gender" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Front_Update_User_Vote">
+      <Parameter Name="PRM_UserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="WRQ_Log_Insert">
+      <Parameter Name="PRM_ProjectID" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_ActionType" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_LogType" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_InnerLogType" Mode="In" Type="Int32" />
+      <Parameter Name="PRM_MSG" Mode="In" Type="String" />
+      <Parameter Name="PRM_MSG2" Mode="In" Type="String" />
+      <Parameter Name="PRM_Error" Mode="In" Type="String" />
+      <Parameter Name="PRM_Critical" Mode="In" Type="Boolean" />
+      <Parameter Name="PRM_Refferer" Mode="In" Type="String" />
+      <Parameter Name="PRM_IP" Mode="In" Type="String" />
+      <Parameter Name="PRM_UA" Mode="In" Type="String" />
+      <Parameter Name="PRM_APICreateDate" Mode="In" Type="DateTime" />
+      <Parameter Name="PRM_APICreateDate_ISR" Mode="In" Type="DateTime" />
+      <Parameter Name="PRM_APITransaction" Mode="In" Type="Guid" />
+      <Parameter Name="PRM_Instance" Mode="In" Type="String" />
+      <Parameter Name="PRM_Identifier" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="SP_Front_Select_All_Bussineses_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="BussinesName" Nullable="false" MaxLength="150" />
+    <Property Type="Int32" Name="CategoryID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_Front_Select_All_Cities_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_Front_Select_All_Streets_By_City_Result">
+    <Property Type="Int32" Name="StreetID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="150" />
+    <Property Type="Int32" Name="CityID" Nullable="false" />
+    <Property Type="Int32" Name="NeighbourhoodID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_Front_Select_Neighbourhood_By_City_And_Street_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="NeighbourhoodID" Nullable="true" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="150" />
+    <Property Type="Int32" Name="CityID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_Front_Select_Votes_By_City_And_Neighbourhood_Result">
+    <Property Type="String" Name="BussinesName" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="150" />
+    <Property Type="Int32" Name="NeighbourhoodID" Nullable="true" />
+  </ComplexType>
+</Schema>

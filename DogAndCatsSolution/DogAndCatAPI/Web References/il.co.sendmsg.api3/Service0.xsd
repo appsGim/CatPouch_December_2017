@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://api2.sendmsg.co.il/SendMsgService" elementFormDefault="qualified" targetNamespace="http://api2.sendmsg.co.il/SendMsgService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://api3.sendmsg.co.il/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="AddUsersOnly">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Users" nillable="true" type="tns:ArrayOfSendMsgUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSendMsgUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SendMsgUser" nillable="true" type="tns:SendMsgUser" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSendMsgUser" nillable="true" type="tns:ArrayOfSendMsgUser" />
+  <xs:complexType name="SendMsgUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cellphone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeleteUser" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsUserSelfRemoved" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UndeleteUserIfExists" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserSendFields" nillable="true" type="tns:ArrayOfSendMsgFields" />
+      <xs:element minOccurs="0" name="UserSystemFields" nillable="true" type="tns:ArrayOfSendMsgFields" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendMsgUser" nillable="true" type="tns:SendMsgUser" />
+  <xs:complexType name="ArrayOfSendMsgFields">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SendMsgFields" nillable="true" type="tns:SendMsgFields" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSendMsgFields" nillable="true" type="tns:ArrayOfSendMsgFields" />
+  <xs:complexType name="SendMsgFields">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendMsgFields" nillable="true" type="tns:SendMsgFields" />
+  <xs:element name="AddUsersOnlyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddUsersOnlyResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="SendMsgResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ResultID" type="xs:int" />
+      <xs:element minOccurs="0" name="ResultMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendMsgResults" nillable="true" type="tns:SendMsgResults" />
+  <xs:element name="AddUsersAndSend">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Users" nillable="true" type="tns:ArrayOfSendMsgUser" />
+        <xs:element minOccurs="0" name="Messgae" nillable="true" type="tns:SendMsgMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="SendMsgMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddFacebook" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AddForward" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AddShowMessage" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsDeleted" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPaused" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MessageAttachments" nillable="true" type="tns:ArrayOfSendMsgAttachment" />
+      <xs:element minOccurs="0" name="MessageBackColor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageDirection" type="tns:SendMsgDirection" />
+      <xs:element minOccurs="0" name="MessageFields" nillable="true" type="tns:ArrayOfSendMsgFields" />
+      <xs:element minOccurs="0" name="MessageID" type="xs:int" />
+      <xs:element minOccurs="0" name="MessageInnerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageSubject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageType" type="tns:SendMsgMessageType" />
+      <xs:element minOccurs="0" name="PostponeSendTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RemoveCredits" type="xs:boolean" />
+      <xs:element minOccurs="0" name="RemoveFooterlinks" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SenderEmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UseDraftID" type="xs:int" />
+      <xs:element minOccurs="0" name="UseTemplateID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendMsgMessage" nillable="true" type="tns:SendMsgMessage" />
+  <xs:complexType name="ArrayOfSendMsgAttachment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SendMsgAttachment" nillable="true" type="tns:SendMsgAttachment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSendMsgAttachment" nillable="true" type="tns:ArrayOfSendMsgAttachment" />
+  <xs:complexType name="SendMsgAttachment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DownloadNotificationUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NewFileName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendMsgAttachment" nillable="true" type="tns:SendMsgAttachment" />
+  <xs:simpleType name="SendMsgDirection">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ltr">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="rtl">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SendMsgDirection" nillable="true" type="tns:SendMsgDirection" />
+  <xs:simpleType name="SendMsgMessageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MailMessage" />
+      <xs:enumeration value="SmsMessage" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SendMsgMessageType" nillable="true" type="tns:SendMsgMessageType" />
+  <xs:element name="AddUsersAndSendResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddUsersAndSendResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUsersAndSendTransection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Users" nillable="true" type="tns:ArrayOfSendMsgUser" />
+        <xs:element minOccurs="0" name="Messgae" nillable="true" type="tns:SendMsgMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUsersAndSendTransectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddUsersAndSendTransectionResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUsersToLists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Users" nillable="true" type="tns:ArrayOfSendMsgUser" />
+        <xs:element minOccurs="0" name="MailingLists" nillable="true" type="tns:ArrayOfSendMsgList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSendMsgList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SendMsgList" nillable="true" type="tns:SendMsgList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSendMsgList" nillable="true" type="tns:ArrayOfSendMsgList" />
+  <xs:complexType name="SendMsgList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActiveUserCount" type="xs:int" />
+      <xs:element minOccurs="0" name="ExistingListID" type="xs:int" />
+      <xs:element minOccurs="0" name="IsNewList" type="xs:boolean" />
+      <xs:element minOccurs="0" name="NewListDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NewListName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendMsgList" nillable="true" type="tns:SendMsgList" />
+  <xs:element name="AddUsersToListsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddUsersToListsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUsersToListAndSend">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Users" nillable="true" type="tns:ArrayOfSendMsgUser" />
+        <xs:element minOccurs="0" name="Message" nillable="true" type="tns:SendMsgMessage" />
+        <xs:element minOccurs="0" name="MailingLists" nillable="true" type="tns:ArrayOfSendMsgList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUsersToListAndSendResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddUsersToListAndSendResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="newMessageID" type="xs:int" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateMessageOnly">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Message" nillable="true" type="tns:SendMsgMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateMessageOnlyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateMessageOnlyResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="newMessageID" type="xs:int" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMsgBasicStatistics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="messageID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMsgBasicStatisticsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMsgBasicStatisticsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="msgStatistics" nillable="true" type="tns:SendMsgStatistics" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="SendMsgStatistics">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MessageID" type="xs:int" />
+      <xs:element minOccurs="0" name="NumFailed" type="xs:int" />
+      <xs:element minOccurs="0" name="NumForwarded" type="xs:int" />
+      <xs:element minOccurs="0" name="NumOpened" type="xs:int" />
+      <xs:element minOccurs="0" name="NumSelfRemoved" type="xs:int" />
+      <xs:element minOccurs="0" name="NumSent" type="xs:int" />
+      <xs:element minOccurs="0" name="OriginalMessage" nillable="true" type="tns:SendMsgMessage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendMsgStatistics" nillable="true" type="tns:SendMsgStatistics" />
+  <xs:element name="GetMsgFullStatistics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="messageID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMsgFullStatisticsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMsgFullStatisticsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="OriginalMsg" nillable="true" type="tns:SendMsgMessage" />
+        <xs:element minOccurs="0" name="UsersStats" nillable="true" type="tns:ArrayOfSendMsgUserStatistics" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSendMsgUserStatistics">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SendMsgUserStatistics" nillable="true" type="tns:SendMsgUserStatistics" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSendMsgUserStatistics" nillable="true" type="tns:ArrayOfSendMsgUserStatistics" />
+  <xs:complexType name="SendMsgUserStatistics">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FailReason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsFailed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSelfRemoved" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSent" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastOpenTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NumFwd" type="xs:int" />
+      <xs:element minOccurs="0" name="NumOpened" type="xs:int" />
+      <xs:element minOccurs="0" name="SentTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="tns:SendMsgUser" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendMsgUserStatistics" nillable="true" type="tns:SendMsgUserStatistics" />
+  <xs:element name="GetUserDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUserDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="tns:SendMsgUser" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserMessages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserMessagesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUserMessagesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="UserMsgStats" nillable="true" type="tns:ArrayOfSendMsgStatistics" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSendMsgStatistics">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SendMsgStatistics" nillable="true" type="tns:SendMsgStatistics" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSendMsgStatistics" nillable="true" type="tns:ArrayOfSendMsgStatistics" />
+  <xs:element name="GetSystemUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="requestType" type="tns:SendMsgUsersRequestType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="SendMsgUsersRequestType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AllUsers" />
+      <xs:enumeration value="DelUsers" />
+      <xs:enumeration value="SelfRemUsers" />
+      <xs:enumeration value="wrongMails" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SendMsgUsersRequestType" nillable="true" type="tns:SendMsgUsersRequestType" />
+  <xs:element name="GetSystemUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSystemUsersResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="users" nillable="true" type="tns:ArrayOfSendMsgUser" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMailingListUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ListID" type="xs:int" />
+        <xs:element minOccurs="0" name="requestType" type="tns:SendMsgUsersRequestType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMailingListUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMailingListUsersResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="users" nillable="true" type="tns:ArrayOfSendMsgUser" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSentMessages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSentMessagesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSentMessagesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="MsgList" nillable="true" type="tns:ArrayOfSendMsgMessage" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSendMsgMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SendMsgMessage" nillable="true" type="tns:SendMsgMessage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSendMsgMessage" nillable="true" type="tns:ArrayOfSendMsgMessage" />
+  <xs:element name="GetMailingListNames">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMailingListNamesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMailingListNamesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="listNames" nillable="true" type="tns:ArrayOfSendMsgList" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTemplates">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTemplatesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTemplatesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="tplList" nillable="true" type="tns:ArrayOfSendMsgTemplate" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSendMsgTemplate">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SendMsgTemplate" nillable="true" type="tns:SendMsgTemplate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSendMsgTemplate" nillable="true" type="tns:ArrayOfSendMsgTemplate" />
+  <xs:complexType name="SendMsgTemplate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TemplateBackColor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TemplateContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TemplateDirection" type="tns:SendMsgDirection" />
+      <xs:element minOccurs="0" name="TemplateID" type="xs:int" />
+      <xs:element minOccurs="0" name="TemplateInnerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TemplateSendFields" nillable="true" type="tns:ArrayOfSendMsgFields" />
+      <xs:element minOccurs="0" name="TemplateSubject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TemplateSystemFields" nillable="true" type="tns:ArrayOfSendMsgFields" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendMsgTemplate" nillable="true" type="tns:SendMsgTemplate" />
+  <xs:element name="GetTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TplID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTemplateResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Template" nillable="true" type="tns:SendMsgTemplate" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TplID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DelTemplateResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnDelTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TplID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnDelTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UnDelTemplateResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MsglID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DelMessageResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnDelMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MsglID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnDelMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UnDelMessageResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PauseMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MsglID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PauseMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PauseMessageResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnPauseMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+        <xs:element minOccurs="0" name="ApiPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MsglID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnPauseMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UnPauseMessageResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:SendMsgResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_ErrorsEmailAddress">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_ErrorsEmailAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="get_ErrorsEmailAddressResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="set_ErrorsEmailAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="set_ErrorsEmailAddressResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

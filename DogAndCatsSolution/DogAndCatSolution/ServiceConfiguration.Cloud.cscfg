@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="HapoalimSolution" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="DogAndCatAPI">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=alwaysapps;AccountKey=$(_alwaysapps.key_)" />
+			<Setting name="VERSION" value="23-05-2017" />
+			<Setting name="ConfigUpdateAsMinutes" value="10" />
+      <Setting name="ClientFetchDataInterval_AsMinutes" value="3" />
+      <Setting name="Dog_ServerToken" value="B70E17C1-C297-42DC-932D-D8C034B7B310" />
+      <Setting name="Cat_ServerToken" value="039B59C9-BB15-470A-93E7-4AB496DFD9D5" />
+      <Setting name="LogAllRequest" value="true" />
+      <Setting name="IP_MinuteCycle" value="5" />
+      <Setting name="IP_AllowedPerCycle" value="100" />
+      <Setting name="Unique_MinuteCycle" value="5" />
+      <Setting name="Unique_AllowedPerCycle" value="100" />
+      <Setting name="Dog_StartDate" value="2017-01-01" />
+      <Setting name="Dog_EndDate" value="2017-09-01" />
+      <Setting name="Cat_StartDate" value="2017-01-01" />
+      <Setting name="Cat_EndDate" value="2017-07-01" />
+      <Setting name="RenewProjectToken" value="true" />
+			<Setting name="RestrictServerIP" value="tr-ue" />
+			<Setting name="Local_Cache_Refresh_Hour_Interval" value="3" />
+      <Setting name="AllowedDomains" value="localhost,199.203.196.229,127.0.0.1,212.68.153.93,82.81.135.66" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="29726862-6762-4c0d-b4f8-0244f076beb8" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

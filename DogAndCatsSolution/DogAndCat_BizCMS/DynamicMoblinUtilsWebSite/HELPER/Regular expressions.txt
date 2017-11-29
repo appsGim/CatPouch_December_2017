@@ -1,0 +1,4 @@
+﻿   [RegularExpression("^([5-9]|[1-9][0-9]|[1-9][0-9][0-9])$", ErrorMessage = "Between 5 to 999 minutes")]     
+    [Required]
+    [global::System.Data.Linq.Mapping.ColumnAttribute(Name="Data", Storage="_OTPMinutes", DbType="NVarChar(MAX)")]
+

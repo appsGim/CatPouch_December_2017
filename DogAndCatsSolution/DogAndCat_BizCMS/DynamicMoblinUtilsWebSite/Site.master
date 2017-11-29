@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Proplan CMS</title>
+    <link href="~/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <h1 class="DDMainHeader">Proplan CMS</h1> 
+     
+    <div class="DDNavigation" >
+     
+        <a runat="server" href="~/">
+            <img alt="Back to home page" runat="server" src="DynamicData/Content/Images/back.gif" />Back to home page - Views</a>
+           
+    </div>
+
+    <form id="form1" runat="server">
+          <asp:ImageButton runat="server" ID="home"  ToolTip="Back to home page"  alt="Back to home page" Style="position:absolute; left:285px; top:2px;"  ImageUrl="~/Images/home.png" PostBackUrl="~/Default.aspx" Width="52"  />
+        
+        <asp:ImageButton runat="server" ID="sms"  ToolTip="Send sms"  alt="Send sms" Style="position:absolute; left:350px; top:8px;"  ImageUrl="~/Images/sms.jpg" PostBackUrl="~/SMSApp.aspx" Width="45"  />
+        
+        <asp:ImageButton ID="btlogout" ToolTip="Logout" runat="server" Height="58" Style="position:absolute; left:410px; top:0px;" ImageUrl="~/Images/logou3.jpg" OnClick="btlogout_Click" />
+        
+        <asp:Label ID="lbUser" Text="Unknown" runat="server" Style="position:absolute; left:470px; top:38px; font-size:24px;" ></asp:Label>
+        <div>
+            <%-- TODO: Enable partial rendering by setting the EnablePartialRendering attribute to "true" to provide a smoother browsing experience.
+             Leaving partial rendering disabled will provide a better debugging experience while the application is in development. --%>
+            <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="false" />
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+

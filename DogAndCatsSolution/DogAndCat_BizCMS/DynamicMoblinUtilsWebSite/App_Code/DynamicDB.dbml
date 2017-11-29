@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DogAndCatDBQA" Class="DynamicDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=a4aziks9ov.database.windows.net;Initial Catalog=DogAndCatDBQA;User ID=MoblynUser" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DogAndCatDBQAConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ActionType" Member="ActionTypes">
+    <Type Name="ActionType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="ActionType_Log" Member="Logs" ThisKey="ID" OtherKey="ActionType" Type="Log" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserResponse" Member="UserResponses">
+    <Type Name="UserResponse">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ProjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Project_UserResponse" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IP_Identity" Member="IP_Identities">
+    <Type Name="IP_Identity">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InsertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ExpiredDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MaxAllowed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="APITransaction" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Lead" Member="Leads">
+    <Type Name="Lead">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UniqueUserID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="PlatformID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UserAgent" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="InsertDateISR" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APITransaction" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DBInsertDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Captcha" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ProjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Street" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Number" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FlatNumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="POBox" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Regulation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AcceptContent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="PlatformType_Lead" Member="PlatformType" ThisKey="PlatformID" OtherKey="ID" Type="PlatformType" IsForeignKey="true" />
+      <Association Name="Project_Lead" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" />
+      <Association Name="Unique_User_Identity_Lead" Member="Unique_User_Identity" ThisKey="UniqueUserID" OtherKey="ID" Type="Unique_User_Identity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Log]" Member="Logs">
+    <Type Name="Log">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InsertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ActionType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LogType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MSG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MSG2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Error" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Critical" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="InnerLogType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="APICreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APICreateDate_ISR" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APITransaction" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UA" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Refferer" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Instance" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="QUse" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Identifier" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ProjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ActionType_Log" Member="ActionType1" ThisKey="ActionType" OtherKey="ID" Type="ActionType" IsForeignKey="true" />
+      <Association Name="LogType_Log" Member="Log_Type" ThisKey="LogType" OtherKey="ID" Type="LogType" IsForeignKey="true" />
+      <Association Name="LogType_Log1" Member="Inner_Log_Type" ThisKey="InnerLogType" OtherKey="ID" Type="LogType" IsForeignKey="true" />
+      <Association Name="Project_Log" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LogType" Member="LogTypes">
+    <Type Name="LogType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="LogType_Log" Member="Logs" ThisKey="ID" OtherKey="LogType" Type="Log" />
+      <Association Name="LogType_Log1" Member="Logs1" ThisKey="ID" OtherKey="InnerLogType" Type="Log" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PlatformType" Member="PlatformTypes">
+    <Type Name="PlatformType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="PlatformType_Lead" Member="Leads" ThisKey="ID" OtherKey="PlatformID" Type="Lead" />
+      <Association Name="PlatformType_Unique_User_Identity" Member="Unique_User_Identities" ThisKey="ID" OtherKey="PlatformID" Type="Unique_User_Identity" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Unique_Identity" Member="Unique_Identities">
+    <Type Name="Unique_Identity">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InsertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ExpiredDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UniqueUserIdentity" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MaxAllowed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="APITransaction" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ProjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PreRegister" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Project_Unique_Identity" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Project" Member="Projects">
+    <Type Name="Project">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Token" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="OldToken" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndIncludeDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ServerMSG" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Coupon_SiteID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Coupon_GroupID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Coupon_APIPassword" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Coupon_EmailID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="SenderEmailAddress" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="MessageContent" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="MessageSubject" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="MessageInnerName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="Project_UserResponse" Member="UserResponses" ThisKey="ID" OtherKey="ProjectID" Type="UserResponse" />
+      <Association Name="Project_Lead" Member="Leads" ThisKey="ID" OtherKey="ProjectID" Type="Lead" />
+      <Association Name="Project_Log" Member="Logs" ThisKey="ID" OtherKey="ProjectID" Type="Log" />
+      <Association Name="Project_Unique_Identity" Member="Unique_Identities" ThisKey="ID" OtherKey="ProjectID" Type="Unique_Identity" />
+      <Association Name="Project_Unique_User_Identity" Member="Unique_User_Identities" ThisKey="ID" OtherKey="ProjectID" Type="Unique_User_Identity" />
+      <Association Name="Project_LeadReport" Member="LeadReports" ThisKey="ID" OtherKey="ProjectID" Type="LeadReport" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Unique_User_Identity" Member="Unique_User_Identities">
+    <Type Name="Unique_User_Identity">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InsertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="InsertDateISR" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastVisitTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastVisitTimeISR" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Unique_User_Identity" Member="Unique_User_Identity1" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UA" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="PlatformID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Visit_Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RejectedCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RejectedUntilDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ProjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PreRegister" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Street" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Number" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FlatNumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="POBox" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Regulation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AcceptContent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CouponCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PetType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PetBDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Unique_User_Identity_Lead" Member="Leads" ThisKey="ID" OtherKey="UniqueUserID" Type="Lead" />
+      <Association Name="Project_Unique_User_Identity" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" />
+      <Association Name="PlatformType_Unique_User_Identity" Member="PlatformType" ThisKey="PlatformID" OtherKey="ID" Type="PlatformType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.v_new_reg_cat" Member="reg_cats">
+    <Type Name="reg_cat">
+      <Column Name="RID" Type="System.Int64" DbType="BigInt" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="first_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="last_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="cell_phone" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="street" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="home" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="entry" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dira" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="postcode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="pob" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="gender" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="user_name" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="password" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bdate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="subject" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="application" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="email2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="phone2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="address_adition" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="link_exist" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="accept_det" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="member_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="source_name" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ip" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="date_in" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="date_update" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="databank_num" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.v_lead_projects" Member="LeadReports">
+    <Type Name="LeadReport">
+      <Column Name="RID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Street" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Number" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FlatNumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="POBox" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Regulation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AcceptContent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Pet" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="PetBirthDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Platform" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PreRegister" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="InsertDateISR" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UA" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="ConfirmedCoupon" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="SuccessCoupon" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ProjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Project_LeadReport" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

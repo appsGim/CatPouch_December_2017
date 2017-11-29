@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DogAndCatDBQA" Class="DogAndCatDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=a4aziks9ov.database.windows.net;Initial Catalog=DogAndCatDBQA;User ID=MoblynUser;Connect Timeout=120" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DogAndCatDBQAConnectionString1" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.API_Check_Captcha_AndUser" Method="API_Check_Captcha_AndUser">
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_UserGuid" Parameter="pRM_UserGuid" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_UserUniqueIdentity" Parameter="pRM_UserUniqueIdentity" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="PRM_CreateDate" Parameter="pRM_CreateDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_CreateDateISR" Parameter="pRM_CreateDateISR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_MaxAllowed" Parameter="pRM_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_MinutesToExpired" Parameter="pRM_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_IP" Parameter="pRM_IP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PRM_ProjectID" Parameter="pRM_ProjectID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Check_Captcha_AndUserResult">
+      <Column Name="NeedCaptcha" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MaxAllowed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IPCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpiredDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserUniqueID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UserUniqueRejctCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserUniqueRejctUntil" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Internal_Unique_Identity_AddUpdate" Method="API_Internal_Unique_Identity_AddUpdate">
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_UserUniqueIdentity" Parameter="pRM_UserUniqueIdentity" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="PRM_CreateDate" Parameter="pRM_CreateDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_CreateDateISR" Parameter="pRM_CreateDateISR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_Unique_MaxAllowed" Parameter="pRM_Unique_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Unique_MinutesToExpired" Parameter="pRM_Unique_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.API_IsAlive_UniqueUser" Method="API_IsAlive_UniqueUser">
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_UserUniqueIdentity" Parameter="pRM_UserUniqueIdentity" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="PRM_IP" Parameter="pRM_IP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PRM_UA" Parameter="pRM_UA" Type="System.String" DbType="NVarChar(2000)" />
+    <Parameter Name="PRM_PlatformID" Parameter="pRM_PlatformID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_CreateDate" Parameter="pRM_CreateDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_CreateDateISR" Parameter="pRM_CreateDateISR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_IP_MaxAllowed" Parameter="pRM_IP_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_IP_MinutesToExpired" Parameter="pRM_IP_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_AddToIPIdentity" Parameter="pRM_AddToIPIdentity" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Unique_MaxAllowed" Parameter="pRM_Unique_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Unique_MinutesToExpired" Parameter="pRM_Unique_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_ProjectID" Parameter="pRM_ProjectID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_IsAlive_UniqueUserResult">
+      <Column Name="NeedCaptcha_DUE_IP" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MaxAllowed_IP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Count_IP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpiredDate_IP" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NewUserGuid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="UserToken" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="StaticToken" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Count_MACUnique" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaxAllowed_MACUnique" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpiredDate_MACUnique" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Unique_Reject" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Log_Insert" Method="API_Log_Insert">
+    <Parameter Name="PRM_ActionType" Parameter="pRM_ActionType" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_LogType" Parameter="pRM_LogType" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_InnerLogType" Parameter="pRM_InnerLogType" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_MSG" Parameter="pRM_MSG" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="PRM_MSG2" Parameter="pRM_MSG2" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="PRM_Error" Parameter="pRM_Error" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="PRM_Critical" Parameter="pRM_Critical" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PRM_Refferer" Parameter="pRM_Refferer" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="PRM_IP" Parameter="pRM_IP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PRM_UA" Parameter="pRM_UA" Type="System.String" DbType="NVarChar(4000)" />
+    <Parameter Name="PRM_APICreateDate" Parameter="pRM_APICreateDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_APICreateDate_ISR" Parameter="pRM_APICreateDate_ISR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_Instance" Parameter="pRM_Instance" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PRM_Identifier" Parameter="pRM_Identifier" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PRM_ProjectID" Parameter="pRM_ProjectID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.API_Unique_Identity_AddUpdate" Method="API_Unique_Identity_AddUpdate">
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_UserUniqueIdentity" Parameter="pRM_UserUniqueIdentity" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="PRM_CreateDate" Parameter="pRM_CreateDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_CreateDateISR" Parameter="pRM_CreateDateISR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_Unique_MaxAllowed" Parameter="pRM_Unique_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Unique_MinutesToExpired" Parameter="pRM_Unique_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_ProjectID" Parameter="pRM_ProjectID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Unique_Identity_AddUpdateResult">
+      <Column Name="TotalNow" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpiredDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MaxAllowed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_UI_UserResponse_Get" Method="API_UI_UserResponse_Get">
+    <ElementType Name="API_UI_UserResponse_GetResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="ProjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Lead_Update_CouponMSG" Method="API_Lead_Update_CouponMSG">
+    <Parameter Name="PRM_ID" Parameter="pRM_ID" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="PRM_ResponseMSG" Parameter="pRM_ResponseMSG" Type="System.String" DbType="NVarChar(4000)" />
+    <Parameter Name="PRM_SuccessCoupon" Parameter="pRM_SuccessCoupon" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="API_Lead_Update_CouponMSGResult">
+      <Column Name="DBResult" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Validate_Registered_User" Method="API_Validate_Registered_User">
+    <Parameter Name="PRM_ProjectID" Parameter="pRM_ProjectID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Email" Parameter="pRM_Email" Type="System.String" DbType="NVarChar(100)" />
+    <ElementType Name="API_Validate_Registered_UserResult">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="InsertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="InsertDateISR" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastVisitTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastVisitTimeISR" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Unique_User_Identity" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UA" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="PlatformID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Visit_Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RejectedCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RejectedUntilDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ProjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PreRegister" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Project_Get" Method="API_Project_Get">
+    <Parameter Name="PRM_RenewTokens" Parameter="pRM_RenewTokens" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="API_Project_GetResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Token" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="OldToken" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndIncludeDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ServerMSG" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Coupon_SiteID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Coupon_GroupID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Coupon_APIPassword" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Coupon_EmailID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="SenderEmailAddress" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="MessageContent" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="MessageSubject" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="MessageInnerName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.API_Lead_Insert" Method="API_Lead_Insert">
+    <Parameter Name="PRM_APITransaction" Parameter="pRM_APITransaction" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="PRM_Unique_User_Identity" Parameter="pRM_Unique_User_Identity" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="PRM_PlatformID" Parameter="pRM_PlatformID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_IP" Parameter="pRM_IP" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PRM_UA" Parameter="pRM_UA" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="PRM_APICreateDate" Parameter="pRM_APICreateDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_APICreateDateISR" Parameter="pRM_APICreateDateISR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_MaxRejectCountToLock" Parameter="pRM_MaxRejectCountToLock" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Captcha" Parameter="pRM_Captcha" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="PRM_Unique_MaxAllowed" Parameter="pRM_Unique_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_Unique_MinutesToExpired" Parameter="pRM_Unique_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_ProjectID" Parameter="pRM_ProjectID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_FName" Parameter="pRM_FName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PRM_LName" Parameter="pRM_LName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PRM_Email" Parameter="pRM_Email" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PRM_Phone" Parameter="pRM_Phone" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PRM_City" Parameter="pRM_City" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PRM_Street" Parameter="pRM_Street" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PRM_Number" Parameter="pRM_Number" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PRM_FlatNumber" Parameter="pRM_FlatNumber" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PRM_POBox" Parameter="pRM_POBox" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PRM_Regulation" Parameter="pRM_Regulation" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PRM_AcceptContent" Parameter="pRM_AcceptContent" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PRM_PetType" Parameter="pRM_PetType" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_PetBDate" Parameter="pRM_PetBDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PRM_IP_MaxAllowed" Parameter="pRM_IP_MaxAllowed" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_IP_MinutesToExpired" Parameter="pRM_IP_MinutesToExpired" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRM_AddToIPIdentity" Parameter="pRM_AddToIPIdentity" Type="System.Int32" DbType="Int" />
+    <ElementType Name="API_Lead_InsertResult">
+      <Column Name="DBResult" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UniqueUserID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="LeadID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NewUser" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NeedCaptcha_DUE_IP" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MaxAllowed_IP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Count_IP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpiredIPAt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HapoalimBizQAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ActionType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AddressCombination">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CityID" Type="int" Nullable="false" />
+    <Property Name="StreetID" Type="int" Nullable="false" />
+    <Property Name="NeighbourhoodID" Type="int" />
+  </EntityType>
+  <EntityType Name="Bussineses">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BussinesName" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BussinessCateogries">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cities">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="DistrictID" Type="int" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InsertDate" Type="datetime" Nullable="false" />
+    <Property Name="ActionType" Type="int" />
+    <Property Name="LogType" Type="int" />
+    <Property Name="MSG" Type="nvarchar(max)" />
+    <Property Name="MSG2" Type="nvarchar(max)" />
+    <Property Name="Error" Type="nvarchar(max)" />
+    <Property Name="Critical" Type="bit" />
+    <Property Name="InnerLogType" Type="int" />
+    <Property Name="APICreateDate" Type="datetime" />
+    <Property Name="APICreateDate_ISR" Type="datetime" />
+    <Property Name="APITransaction" Type="uniqueidentifier" />
+    <Property Name="ProjectID" Type="int" />
+    <Property Name="IP" Type="varchar" MaxLength="50" />
+    <Property Name="UA" Type="nvarchar" MaxLength="4000" />
+    <Property Name="Refferer" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Instance" Type="varchar" MaxLength="100" />
+    <Property Name="QUse" Type="bit" />
+    <Property Name="Identifier" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="LogType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Neighbourhood">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Streets">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MacAddress" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IP" Type="nvarchar" MaxLength="50" />
+    <Property Name="VotesCount" Type="int" Nullable="false" />
+    <Property Name="ProposalCount" Type="int" Nullable="false" />
+    <Property Name="Age" Type="nvarchar" MaxLength="10" />
+    <Property Name="Gender" Type="int" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UserAgent" Type="nvarchar" MaxLength="500" />
+    <Property Name="Platform" Type="nvarchar" MaxLength="50" />
+    <Property Name="OS" Type="nvarchar" MaxLength="150" />
+    <Property Name="SubmittedTimes" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserVotes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="BuissinesID" Type="int" Nullable="false" />
+    <Property Name="VoteType" Type="int" Nullable="false" />
+    <Property Name="AddressCombinationID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VoteTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VoteName" Type="nvarchar" MaxLength="5" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AddressCombination_Cities">
+    <End Role="Cities" Type="Self.Cities" Multiplicity="1" />
+    <End Role="AddressCombination" Type="Self.AddressCombination" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AddressCombination">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AddressCombination_Neighbourhood">
+    <End Role="Neighbourhood" Type="Self.Neighbourhood" Multiplicity="0..1" />
+    <End Role="AddressCombination" Type="Self.AddressCombination" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Neighbourhood">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AddressCombination">
+        <PropertyRef Name="NeighbourhoodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AddressCombination_Streets">
+    <End Role="Streets" Type="Self.Streets" Multiplicity="1" />
+    <End Role="AddressCombination" Type="Self.AddressCombination" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Streets">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AddressCombination">
+        <PropertyRef Name="StreetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bussineses_BussinessCateogries">
+    <End Role="BussinessCateogries" Type="Self.BussinessCateogries" Multiplicity="1" />
+    <End Role="Bussineses" Type="Self.Bussineses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BussinessCateogries">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Bussineses">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bussiness_UserVoteBuissiness">
+    <End Role="Bussineses" Type="Self.Bussineses" Multiplicity="1" />
+    <End Role="UserVotes" Type="Self.UserVotes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bussineses">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserVotes">
+        <PropertyRef Name="BuissinesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserVotes_AddressCombination">
+    <End Role="AddressCombination" Type="Self.AddressCombination" Multiplicity="1" />
+    <End Role="UserVotes" Type="Self.UserVotes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AddressCombination">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserVotes">
+        <PropertyRef Name="AddressCombinationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserVotes_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserVotes" Type="Self.UserVotes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserVotes">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserVotes_VoteTypes">
+    <End Role="VoteTypes" Type="Self.VoteTypes" Multiplicity="1" />
+    <End Role="UserVotes" Type="Self.UserVotes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VoteTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserVotes">
+        <PropertyRef Name="VoteType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="API_Log_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRM_ProjectID" Type="int" Mode="In" />
+    <Parameter Name="PRM_ActionType" Type="int" Mode="In" />
+    <Parameter Name="PRM_LogType" Type="int" Mode="In" />
+    <Parameter Name="PRM_InnerLogType" Type="int" Mode="In" />
+    <Parameter Name="PRM_MSG" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PRM_MSG2" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PRM_Error" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PRM_Critical" Type="bit" Mode="In" />
+    <Parameter Name="PRM_Refferer" Type="nvarchar" Mode="In" />
+    <Parameter Name="PRM_IP" Type="varchar" Mode="In" />
+    <Parameter Name="PRM_UA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PRM_APICreateDate" Type="datetime" Mode="In" />
+    <Parameter Name="PRM_APICreateDate_ISR" Type="datetime" Mode="In" />
+    <Parameter Name="PRM_APITransaction" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PRM_Instance" Type="varchar" Mode="In" />
+    <Parameter Name="PRM_Identifier" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Front_Insert_User" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRM_MacAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="PRM_IP" Type="nvarchar" Mode="In" />
+    <Parameter Name="PRM_Age" Type="nvarchar" Mode="In" />
+    <Parameter Name="PRM_Gender" Type="int" Mode="In" />
+    <Parameter Name="PRM_CreatedDate" Type="date" Mode="In" />
+    <Parameter Name="PRM_UserAgent" Type="nvarchar" Mode="In" />
+    <Parameter Name="PRM_Platform" Type="nvarchar" Mode="In" />
+    <Parameter Name="PRM_OS" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Front_Insert_Vote" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRM_UserID" Type="int" Mode="In" />
+    <Parameter Name="PRM_BussinessID" Type="int" Mode="In" />
+    <Parameter Name="PRM_VoteType" Type="int" Mode="In" />
+    <Parameter Name="PRM_AddressCombinationID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Front_Insert_Vote_OLD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRM_UserID" Type="int" Mode="In" />
+    <Parameter Name="PRM_BussinessID" Type="int" Mode="In" />
+    <Parameter Name="PRM_VoteType" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Front_Select_All_Bussineses" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Front_Select_All_Cities" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Front_Select_All_Streets_By_City" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRM_CityID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Front_Select_Neighbourhood_By_City_And_Street" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRM_CityID" Type="int" Mode="In" />
+    <Parameter Name="PRM_StreetID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Front_Select_SubmittedTimes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRM_UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Front_Select_Votes_By_City_And_Neighbourhood" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRM_AddressCombination" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Front_Update_User" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRM_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="PRM_Age" Type="nvarchar" Mode="In" />
+    <Parameter Name="PRM_Gender" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Front_Update_User_Vote" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRM_UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="WRQ_Log_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRM_ProjectID" Type="int" Mode="In" />
+    <Parameter Name="PRM_ActionType" Type="int" Mode="In" />
+    <Parameter Name="PRM_LogType" Type="int" Mode="In" />
+    <Parameter Name="PRM_InnerLogType" Type="int" Mode="In" />
+    <Parameter Name="PRM_MSG" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PRM_MSG2" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PRM_Error" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PRM_Critical" Type="bit" Mode="In" />
+    <Parameter Name="PRM_Refferer" Type="nvarchar" Mode="In" />
+    <Parameter Name="PRM_IP" Type="varchar" Mode="In" />
+    <Parameter Name="PRM_UA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PRM_APICreateDate" Type="datetime" Mode="In" />
+    <Parameter Name="PRM_APICreateDate_ISR" Type="datetime" Mode="In" />
+    <Parameter Name="PRM_APITransaction" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PRM_Instance" Type="varchar" Mode="In" />
+    <Parameter Name="PRM_Identifier" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="HapoalimBizQAModelStoreContainer">
+    <EntitySet Name="ActionType" EntityType="Self.ActionType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AddressCombination" EntityType="Self.AddressCombination" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bussineses" EntityType="Self.Bussineses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BussinessCateogries" EntityType="Self.BussinessCateogries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cities" EntityType="Self.Cities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Log" EntityType="Self.Log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LogType" EntityType="Self.LogType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Neighbourhood" EntityType="Self.Neighbourhood" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Streets" EntityType="Self.Streets" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserVotes" EntityType="Self.UserVotes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VoteTypes" EntityType="Self.VoteTypes" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AddressCombination_Cities" Association="Self.FK_AddressCombination_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="AddressCombination" EntitySet="AddressCombination" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AddressCombination_Neighbourhood" Association="Self.FK_AddressCombination_Neighbourhood">
+      <End Role="Neighbourhood" EntitySet="Neighbourhood" />
+      <End Role="AddressCombination" EntitySet="AddressCombination" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AddressCombination_Streets" Association="Self.FK_AddressCombination_Streets">
+      <End Role="Streets" EntitySet="Streets" />
+      <End Role="AddressCombination" EntitySet="AddressCombination" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bussineses_BussinessCateogries" Association="Self.FK_Bussineses_BussinessCateogries">
+      <End Role="BussinessCateogries" EntitySet="BussinessCateogries" />
+      <End Role="Bussineses" EntitySet="Bussineses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bussiness_UserVoteBuissiness" Association="Self.FK_Bussiness_UserVoteBuissiness">
+      <End Role="Bussineses" EntitySet="Bussineses" />
+      <End Role="UserVotes" EntitySet="UserVotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserVotes_AddressCombination" Association="Self.FK_UserVotes_AddressCombination">
+      <End Role="AddressCombination" EntitySet="AddressCombination" />
+      <End Role="UserVotes" EntitySet="UserVotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserVotes_Users" Association="Self.FK_UserVotes_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserVotes" EntitySet="UserVotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserVotes_VoteTypes" Association="Self.FK_UserVotes_VoteTypes">
+      <End Role="VoteTypes" EntitySet="VoteTypes" />
+      <End Role="UserVotes" EntitySet="UserVotes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

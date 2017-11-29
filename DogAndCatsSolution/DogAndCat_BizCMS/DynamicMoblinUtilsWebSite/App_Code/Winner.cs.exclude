@@ -1,0 +1,48 @@
+﻿using System.Web.DynamicData;
+using System.ComponentModel.DataAnnotations;
+using System;
+
+public class WinnerMetaData
+{
+    [Display(Order =1)]
+    [FilterUIHint("Int64_Range")]
+    public long ID;
+
+    [Display(Order = 2)]
+    [FilterUIHint("Date")]
+    public DateTime Lottery_DueDate;
+
+    [Display(Order = 3)]
+    [FilterUIHint("Int_Range")]
+    public int Lottery_DueHour;
+
+
+    [Display(Order = 4)]
+    [FilterUIHint("Search")]
+    public string Phone;
+
+    [Display(Order = 5)]
+    [FilterUIHint("Search")]
+    public string Code;
+     
+
+    [Display(Order = 8)]
+    [FilterUIHint("Search")]
+    public string Name;
+
+    [Display(Order = 9)]
+    [FilterUIHint("Search")]
+    public string LName;
+
+    [Display(Order = 10)]
+    [FilterUIHint("Search")]
+    public string PlatformName;
+
+}
+
+[MetadataType(typeof(FindWinnerMetaData))]
+public partial class Winner
+{
+   
+}
+ 

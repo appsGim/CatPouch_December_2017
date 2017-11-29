@@ -1,0 +1,398 @@
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\bin\Release\ServiceConfiguration.cscfg
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\bin\Release\ServiceDefinition.csdef
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Antlr3.Runtime.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Antlr3.Runtime.pdb
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\de\System.Spatial.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\EntityFramework.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\EntityFramework.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\es\System.Spatial.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\fr\System.Spatial.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\HapoalimAPI.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\HapoalimAPI.dll.config
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\HapoalimAPI.pdb
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\it\System.Spatial.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ja\System.Spatial.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ko\System.Spatial.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Data.Edm.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Data.Edm.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Data.OData.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Data.OData.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Data.Services.Client.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Data.Services.Client.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\MonAgentListener.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Newtonsoft.Json.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Newtonsoft.Json.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csc.exe
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csc.exe.config
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csc.rsp
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csi.exe
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csi.rsp
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.AppContext.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\vbc.exe
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\vbc.exe.config
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\vbc.rsp
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ru\System.Spatial.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Swashbuckle.Core.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Spatial.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Spatial.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Helpers.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Helpers.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Http.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Http.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Mvc.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Mvc.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Optimization.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Optimization.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Razor.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Razor.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.WebPages.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.WebPages.xml
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\WebActivatorEx.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\WebGrease.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\idos\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\bin\Release\ServiceConfiguration.cscfg
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\bin\Release\ServiceDefinition.csdef
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Antlr3.Runtime.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\de\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\EntityFramework.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\es\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\fr\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\HapoalimAPI.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\it\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ja\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ko\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Data.Edm.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Data.OData.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Data.Services.Client.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\MonAgentListener.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Newtonsoft.Json.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csc.exe
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csc.exe.config
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csc.rsp
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csi.exe
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csi.rsp
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.AppContext.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\vbc.exe
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\vbc.exe.config
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\vbc.rsp
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ru\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Swashbuckle.Core.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Spatial.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Helpers.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Http.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Mvc.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Optimization.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Razor.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.WebPages.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\WebActivatorEx.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\WebGrease.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.CSharp.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Configuration.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Data.DataSetExtensions.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Data.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Data.Linq.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Drawing.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.EnterpriseServices.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Net.Http.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Runtime.Serialization.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Security.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.ApplicationServices.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.DynamicData.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Entity.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Extensions.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Services.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\WindowsAzureEventSource.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\WindowsAzureTelemetryEvents.dll
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Content\bootstrap.css
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Content\bootstrap.min.css
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Content\Site.css
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\DAL\DBHapoalim.dbml
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\fonts\glyphicons-halflings-regular.eot
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\fonts\glyphicons-halflings-regular.svg
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\fonts\glyphicons-halflings-regular.ttf
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\fonts\glyphicons-halflings-regular.woff
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Global.asax
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\packages.config
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\bootstrap.js
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\bootstrap.min.js
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery-1.10.2.js
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery-1.10.2.min.js
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery-1.10.2.min.map
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery.validate.js
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery.validate.min.js
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery.validate.unobtrusive.js
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery.validate.unobtrusive.min.js
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\modernizr-2.6.2.js
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Views\Shared\Error.cshtml
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Views\Shared\_Layout.cshtml
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Views\web.config
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Views\_ViewStart.cshtml
+C:\Users\sharonb\Documents\Visual Studio 2015\Projects\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Web.config
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\bin\Release\ServiceConfiguration.cscfg
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\bin\Release\ServiceDefinition.csdef
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Antlr3.Runtime.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\de\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\EntityFramework.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\es\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\fr\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\HapoalimAPI.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\it\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ja\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ko\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.CSharp.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Data.Edm.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Data.OData.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Data.Services.Client.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\MonAgentListener.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Newtonsoft.Json.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csc.exe
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csc.exe.config
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csc.rsp
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csi.exe
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\csi.rsp
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.AppContext.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\vbc.exe
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\vbc.exe.config
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\vbc.rsp
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\ru\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\Swashbuckle.Core.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Configuration.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Data.DataSetExtensions.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Data.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Data.Linq.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Drawing.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.EnterpriseServices.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Net.Http.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Runtime.Serialization.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Security.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Spatial.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.ApplicationServices.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.DynamicData.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Entity.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Extensions.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Helpers.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Http.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Mvc.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Optimization.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Razor.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.Services.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.WebPages.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\WebActivatorEx.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\WebGrease.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\WindowsAzureEventSource.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\WindowsAzureTelemetryEvents.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Content\bootstrap.css
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Content\bootstrap.min.css
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Content\Site.css
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\DAL\DBHapoalim.dbml
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\fonts\glyphicons-halflings-regular.eot
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\fonts\glyphicons-halflings-regular.svg
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\fonts\glyphicons-halflings-regular.ttf
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\fonts\glyphicons-halflings-regular.woff
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Global.asax
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\packages.config
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\bootstrap.js
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\bootstrap.min.js
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery-1.10.2.js
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery-1.10.2.min.js
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery-1.10.2.min.map
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery.validate.js
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery.validate.min.js
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery.validate.unobtrusive.js
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\jquery.validate.unobtrusive.min.js
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Scripts\modernizr-2.6.2.js
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Views\Shared\Error.cshtml
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Views\Shared\_Layout.cshtml
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Views\web.config
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Views\_ViewStart.cshtml
+C:\Users\sharonb\Documents\GitHub\HapoalimBusinessServerAPI\HapoalimSolution\HapoalimSolution\obj\Release\HapoalimAPI\Web.config

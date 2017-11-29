@@ -1,0 +1,29 @@
+﻿using System.Web.DynamicData;
+using System.ComponentModel.DataAnnotations;
+using System;
+
+public class CodeMetaData
+{
+    [Display(Order = 1)]
+    [FilterUIHint("Int64_Range")]
+    public long ID;
+
+    [Display(Order = 2)]
+    [FilterUIHint("Int64_Range")]
+    public long LeadID;
+
+    [Display(Order = 3)]
+    [FilterUIHint("Date")]
+    public DateTime TakenDate_ISR;
+
+    [Display(Order = 4)]
+    [FilterUIHint("Search")]
+    public long ActiviaCode;
+
+}
+
+[MetadataType(typeof(CodeMetaData))]
+public partial class Code
+{
+   
+}

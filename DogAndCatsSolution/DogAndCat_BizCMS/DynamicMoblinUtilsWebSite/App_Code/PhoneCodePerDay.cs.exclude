@@ -1,0 +1,25 @@
+﻿using System.Web.DynamicData;
+using System.ComponentModel.DataAnnotations;
+using System;
+
+public class PhoneCodePerDayMetaData
+{
+    [Display(Order =1)]
+    [FilterUIHint("Int64_Range")]
+    public long ID;
+
+    [Display(Order = 2)]
+    [FilterUIHint("Int64_Range")]
+    public long PhoneID;
+
+    [Display(Order = 3)]
+    [FilterUIHint("Date")]
+    public DateTime SignatureDate_ISR;
+ 
+}
+
+[MetadataType(typeof(PhoneCodePerDayMetaData))]
+public partial class PhoneCodePerDay
+{
+   
+}

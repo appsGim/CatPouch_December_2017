@@ -1,0 +1,39 @@
+﻿using System.Web.DynamicData;
+using System.ComponentModel.DataAnnotations;
+using System;
+
+public class PhoneRejectMetaData
+{
+    [Display(Order = 1)]
+    [FilterUIHint("Int64_Range")]
+    public long ID;
+
+    [Display(Order = 2)]
+    [FilterUIHint("Int64_Range")]
+    public long PhoneID;
+
+    [Display(Order = 4)]
+    [FilterUIHint("Date")]
+    public string APICreateDate_ISR;
+
+
+    [Display(Order = 5)]
+    [FilterUIHint("Int_Range")]
+    public string TotalFailCount;
+
+    [Display(Order = 6)]
+    [FilterUIHint("Search")]
+    public string MSG;
+
+    [Display(Order = 7)]
+    [FilterUIHint("Search")]
+    public string MSG2;
+
+
+}
+
+[MetadataType(typeof(PhoneRejectMetaData))]
+public partial class PhoneReject
+{
+   
+}

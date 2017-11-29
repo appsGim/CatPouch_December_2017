@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="HapoalimSolution" schemaVersion="2015-04.2.6" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WebRole name="DogAndCatAPI">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="AllowedDomains" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" />
+      <Setting name="Cat_EndDate" />
+      <Setting name="Cat_ServerToken" />
+      <Setting name="Cat_StartDate" />
+      <Setting name="ClientFetchDataInterval_AsMinutes" />
+      <Setting name="ConfigUpdateAsMinutes" />
+      <Setting name="Dog_EndDate" />
+      <Setting name="Dog_ServerToken" />
+      <Setting name="Dog_StartDate" />
+      <Setting name="IP_AllowedPerCycle" />
+      <Setting name="IP_MinuteCycle" />
+      <Setting name="Local_Cache_Refresh_Hour_Interval" />
+      <Setting name="LogAllRequest" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="RenewProjectToken" />
+      <Setting name="RestrictServerIP" />
+      <Setting name="Unique_AllowedPerCycle" />
+      <Setting name="Unique_MinuteCycle" />
+      <Setting name="VERSION" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" localPort="80" />
+    </Endpoints>
+    <Certificates />
+  </WebRole>
+</ServiceDefinition>
