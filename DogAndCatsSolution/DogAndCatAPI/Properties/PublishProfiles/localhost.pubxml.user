@@ -25,10 +25,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/01/2017 14:00:14</publishTime>
     </File>
     <File Include="bin/DogAndCatAPI.dll">
-      <publishTime>11/27/2017 16:12:02</publishTime>
+      <publishTime>12/03/2017 10:26:38</publishTime>
     </File>
     <File Include="bin/DogAndCatAPI.XmlSerializers.dll">
-      <publishTime>11/27/2017 16:12:03</publishTime>
+      <publishTime>12/03/2017 10:26:40</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>11/03/2015 16:43:42</publishTime>
@@ -457,7 +457,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/21/2017 18:49:10</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/27/2017 15:48:04</publishTime>
+      <publishTime>12/03/2017 10:26:42</publishTime>
     </File>
   </ItemGroup>
 </Project>

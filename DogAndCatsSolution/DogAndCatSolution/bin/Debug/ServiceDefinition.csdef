@@ -44,14 +44,8 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\sharonb\Documents\GitHub\DogAndCatPauchServer\DogAndCatServer\DogAndCatsSolution\DogAndCatSolution\rcf\Debug\DogAndCatAPIContent\" />
-      </Content>
-      <Content destination=".\">
-        <SourceDirectory path="C:\Users\sharonb\Documents\GitHub\DogAndCatPauchServer\DogAndCatServer\DogAndCatsSolution\DogAndCatSolution\ecf\DogAndCatAPIContent\" />
+        <SourceDirectory path="C:\Users\sharonb\Documents\GitHubAppGim\CatPouch_December_2017\DogAndCatsSolution\DogAndCatSolution\rcf\Debug\DogAndCatAPIContent\" />
       </Content>
     </Contents>
-    <Imports>
-      <Import moduleName="Diagnostics" />
-    </Imports>
   </WebRole>
 </ServiceDefinition>
