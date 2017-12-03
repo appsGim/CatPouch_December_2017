@@ -63,11 +63,22 @@ namespace DogAndCatAPI.Models
         [Required]
         public Guid P { get; set; }
 
-       
         [Required]
-        [StringLength(100, MinimumLength = 5)]
+        [StringLength(60, MinimumLength = 5)]
         public string Email { get; set; }
-        
+
+        [Required]//DVIR
+        [StringLength(25, MinimumLength = 2)]
+        public string City { get; set; }
+        [Required]
+        [StringLength(35, MinimumLength = 2)]
+        public string Street { get; set; }
+        [Required]
+        [StringLength(5, MinimumLength = 1)]
+        public string STNumber { get; set; }
+         
+        public string POBox { get; set; }
+  
         public string CAP { get; set; }
 
         public Registered_SubmitLead() : base() { }

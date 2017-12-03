@@ -399,7 +399,7 @@ namespace DogAndCatAPI.Controllers
 
         }
 
-        public Result RL(/*Registered_SubmitLead*/SubmitLead req)
+        public Result RL(Registered_SubmitLead req)
         {
 
             base.Init_Request_Data(enumAction.Lead, req, req.IP, req.UA, req.T);
@@ -576,16 +576,16 @@ namespace DogAndCatAPI.Controllers
                 P = req.P,
                 T = req.T,
                 UA = req.UA,
-                FName =req.FName,// "NA",
-                LName =req.LName,// "NA",
+                FName =  "NA",
+                LName = "NA",
                 City =req.City,// "NA",
                 Street =req.Street,// "NA",
-                Phone =req.Phone,// "NA",
-                FlatNumber=req.FlatNumber,// "NA",
+                Phone =  "NA",
+                FlatNumber=  "NA",
                 STNumber=req.STNumber,// "NA"
-                AcceptContent=req.AcceptContent,
+                AcceptContent=true,  //req.AcceptContent,
                 POBox=req.POBox,
-                Regulation=req.Regulation
+                Regulation=true// req.Regulation
             };
 
             API_Lead_InsertResult lead =
